@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-family-primary; 
+}
+
+body {
+  width: 100%;
+  height: 100dvh;
+  background-color: $primary-white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  width: $base-width-card;
+  height: $base-height-card;
+  background-color: $primary-white;
+  border-radius: $base-border-radius;
+  box-shadow: $base-box-shadow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.banner {
+  background: $primary-blue;
+  border-radius: $base-border-radius;
+  width: $base-width-banner;
+  height: $base-height-banner;
+  position: relative;
+}
+.img {
+  display: flex;
+  justify-content: center;
+  margin-top: $base-margin-top;
+  .menu {
+    width: $base-width-img;
+    height: $base-height-img;
+    border-radius: $base-full-radius;
+    background-color: $primary-red;
+    img{
+      width: 100%;
+      height: 100%;
+      border-radius: $base-full-radius;
+    }
+  }
+}
+.main-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 35px 0 0;
+  .name {
+    font-size: $font-size-lg;
+    color: $primary-blue;
+  }
+  .title {
+    font-size: $font-size-m;
+    color: $primary-grey; 
+  }
+}
+
+.follow-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  h2{
+    a{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      color: $primary-grey; 
+      span{
+        font-size: $font-size-lg;
+        color: $primary-red;
+      }
+      small{
+        font-size: $font-size-m;
+        color: $primary-blue;
+      }
+    }
+  }
+}
+.follow-btn {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  button {
+    width: $base-width-button;
+    height: $base-height-button;
+    font-size: $font-size-m;
+    color: $primary-white;
+    border-radius: $base-border-radius;
+    border: none;
+    background-color: $primary-blue;
+  }
+}
